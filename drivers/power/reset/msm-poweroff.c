@@ -295,7 +295,8 @@ static void msm_restart_prepare(const char *cmd)
 				(cmd != NULL && cmd[0] != '\0'));
 	}
 
-#ifdef CONFIG_QCOM_PRESERVE_MEM
+#ifdef CONFIG_MACH_MSM8998_ONEPLUS5
+	/* To preserve console-ramoops */
 	need_warm_reset = true;
 #endif
 
